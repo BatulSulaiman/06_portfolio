@@ -337,38 +337,35 @@ nav {
 }
 
 /* Knap placeres midt-nederst på det lyserøde billede */
-.project-button {
+.tema-knap {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: 70px;
   transform: translateX(-50%);
-  z-index: 2;
+  padding: 0.5rem 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #3d2f2f;
+  border: 2.5px solid #3d2f2f;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.project-button img {
-  width: 250px;
-  height: auto;
-  display: block;
-}
-
-.project-button img {
-  width: 280px;
-  bottom: 1000px;
-}
-
-@keyframes pulse {
+@keyframes pulseGlow {
   0% {
-    filter: drop-shadow(0 0 0px #e4b37f);
+    box-shadow: 0 0 0px #3d2f2f;
   }
   50% {
-    filter: drop-shadow(0 0 12px #e4b37f);
+    box-shadow: 0 0 12px #3d2f2f;
   }
   100% {
-    filter: drop-shadow(0 0 0px #e4b37f);
+    box-shadow: 0 0 0px #3d2f2f;
   }
 }
 
-.project-button img:hover {
-  animation: pulse 1s infinite;
+.tema-knap:hover {
+  animation: pulseGlow 1.5s infinite ease-in-out;
 }
+
 /*************/
