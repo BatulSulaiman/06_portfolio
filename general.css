@@ -1,0 +1,140 @@
+/***************om-mig******************/
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 80px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .portfolio-heading {
+    font-size: 128px; /* større overskrift på desktop */
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    padding: 80px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .hearts {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    justify-self: center;
+  }
+
+  .hearts img {
+    max-width: 700px; /* større billede */
+    width: 100%;
+    height: auto;
+  }
+
+  .buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 16px 32px;
+    border-radius: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .name {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-weight: 700;
+    font-size: 96px;
+    margin-top: 10px;
+    text-align: left; /* ikke centreret */
+  }
+  /********************om-os******************/
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    padding: 4rem 6rem;
+    position: relative;
+    align-items: start; /* <- sørger for at billedet ikke ryger ned */
+  }
+
+  .grid_1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .grid_2 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+    max-width: 300px;
+    margin-top: 7rem; /* 👈 juster denne værdi efter behov */
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .circle-1 {
+    position: absolute;
+    top: 10px;
+    width: 900px;
+  }
+
+  .circle-2 {
+    position: absolute;
+    top: 60px;
+    width: 600px;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  /***********/
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .project h2 {
+    font-size: 20px;
+  }
+
+  .portfolio-heading {
+    font-size: 64px;
+  }
+
+  .portfolio-subtitle {
+    font-size: 18px;
+  }
+}
