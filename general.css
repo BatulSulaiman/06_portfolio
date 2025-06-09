@@ -1,15 +1,17 @@
 /***************om-mig******************/
 @media screen and (min-width: 800px) {
+  /************forside**********/
+  .portfolio-heading {
+    font-size: 128px;
+  }
   h1 {
     font-size: 80px;
-    font-family: "Cormorant Garamond", serif;
     font-weight: bold;
     margin-bottom: 1rem;
   }
 
   h2 {
     font-size: 36px;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     margin-bottom: 1.5rem;
   }
@@ -22,9 +24,6 @@
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 2rem;
-  }
-  .portfolio-heading {
-    font-size: 128px; /* større overskrift på desktop */
   }
 
   .hero-grid {
@@ -68,13 +67,29 @@
   }
 
   .name {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    font-weight: 700;
-    font-size: 96px;
-    margin-top: 10px;
-    text-align: left; /* ikke centreret */
+    display: none;
   }
+
+  .namelottie {
+    display: inline;
+    position: relative;
+    z-index: 1;
+    top: 180px;
+    left: 100px;
+  }
+
+  .lottie {
+    display: inline;
+    position: relative;
+  }
+
+  .overlap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
   /********************om-os******************/
   .grid_1-1 {
     display: grid;
@@ -118,11 +133,15 @@
     opacity: 0.4;
     z-index: -1;
   }
-  /***********/
+
+  .portfolio-subtitle {
+    font-size: 18px;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 1000px;
+    gap: 4rem;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
@@ -130,11 +149,12 @@
     font-size: 20px;
   }
 
-  .portfolio-heading {
-    font-size: 64px;
+  .project-button img {
+    width: 280px;
+    bottom: 1000px;
   }
 
-  .portfolio-subtitle {
-    font-size: 18px;
+  .image-wrapper {
+    padding-bottom: 5rem;
   }
 }
