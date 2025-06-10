@@ -5,25 +5,23 @@
     font-size: 128px;
   }
   h1 {
-    font-size: 80px;
-    font-weight: bold;
+    font-size: 56px; /* før: 80px */
     margin-bottom: 1rem;
   }
 
   h2 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+    font-size: 28px; /* før: 36px */
+    margin-bottom: 1rem;
   }
+
   h3 {
-    font-size: 24px;
+    font-size: 20px; /* før: 24px */
   }
+
   p {
-    font-size: 22px;
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    font-size: 18px; /* før: 22px */
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
   }
 
   .hero-grid {
@@ -155,5 +153,43 @@
 
   .portfolio-subtitle {
     font-size: 18px;
+  }
+  /***************/
+  ¨ .web-sektion {
+    grid-template-columns: 1fr 1fr; /* aktiverer grid ved større skærme */
+    max-width: 900px;
+  }
+
+  .grid_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-tekst {
+    grid-column: 1;
+  }
+  .cirkel-sektion {
+    grid-column: 2;
+    position: relative;
+    width: 100%;
+  }
+  .cirkel-baggrund {
+    width: 440px;
+    bottom: -80px;
+    pointer-events: none; /* så den ikke forstyrrer klik */
+  }
+  .cirkel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-right: 4rem;
+    gap: 2rem;
+    transform: scale(1.25); /* gør hele wrapper større */
+  }
+
+  .web-sektion {
+    grid-template-columns: 1fr 1fr; /* aktiverer grid ved større skærme */
+    max-width: 900px;
   }
 }

@@ -371,67 +371,7 @@ nav {
 .tema-knap:hover {
   animation: pulseGlow 1.5s infinite ease-in-out;
 }
-
 /*************/
-.cirkel-sektion {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 4rem auto;
-  padding: 2rem;
-}
-
-.cirkel-baggrund {
-  position: absolute;
-  z-index: -1;
-  opacity: 0.4;
-  bottom: 0;
-  right: 0;
-  width: 350px;
-  max-width: 80%;
-}
-
-.cirkel-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem;
-}
-
-.cirkel-billede {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width: 580px) {
-  .cirkel-sektion {
-    padding: 1rem;
-  }
-
-  .cirkel-baggrund {
-    width: 220px;
-    right: -50px;
-    bottom: -50px;
-  }
-
-  .cirkel-wrapper {
-    margin-top: 2rem;
-  }
-
-  .cirkel-billede {
-    max-width: 180px;
-  }
-
-  .web-knap {
-    font-size: 1rem;
-    padding: 0.6rem 1.5rem;
-  }
-}
-
 .web-sektion {
   background-color: rgba(241, 213, 220, 0.4); /* #F1D5DC med 40% */
   padding: 2rem;
@@ -440,21 +380,54 @@ nav {
   gap: 2rem;
   margin: 2rem auto;
   max-width: 800px;
-  box-sizing: border-box;
+  justify-content: center;
 }
 
 .web-sektion img {
-  width: 100%; /* Fyld kolonnen */
-  max-width: 300px; /* Begræns størrelsen */
+  width: 100%;
+  max-width: 300px;
   height: auto;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  justify-self: center; /* Midt i kolonnen */
+  justify-self: center;
   aspect-ratio: 4 / 3;
 }
 
+.cirkel-sektion {
+  position: relative;
+  max-width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: flex-end; /* flytter det hele mod højre */
+  padding-right: 2rem;
+}
+
+.cirkel-baggrund {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  bottom: 0;
+  right: 0;
+  width: 380px;
+  max-width: 100%;
+}
+
+.cirkel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+}
+
+.cirkel-billede {
+  max-width: 250px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .web-knap {
-  margin-top: 1.5rem;
   padding: 0.8rem 1.8rem;
   font-size: 1.1rem;
   font-weight: bold;
@@ -471,8 +444,54 @@ nav {
   transform: scale(1.05);
   box-shadow: 0 0 12px #3d2f2f;
 }
+@media screen and (max-width: 580px) {
+  .cirkel-sektion {
+    justify-content: center;
+    padding-right: 0;
+  }
 
-/*********footer**********/
+  .cirkel-baggrund {
+    width: 250px;
+    right: -30px;
+    bottom: -30px;
+  }
+
+  .cirkel-wrapper {
+    gap: 1rem;
+  }
+
+  .cirkel-billede {
+    max-width: 180px;
+  }
+
+  .web-knap {
+    font-size: 1rem;
+    padding: 0.6rem 1.4rem;
+  }
+}
+
+/********************/
+.web-sektion2 {
+  background-color: rgba(228, 179, 127, 0.4);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* to lige store kolonner */
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.web-sektion2 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  justify-self: center;
+  aspect-ratio: 4 / 3;
+}
+/****************/
+
 footer {
   background-color: #ffffff;
   padding: 20px 0;
