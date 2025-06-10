@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.42 78.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #a393b3;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="sociale">
+    <g>
+      <g>
+        <rect class="cls-2" x="3.5" y="3.5" width="71.42" height="71.38" rx="20" ry="20"/>
+        <ellipse class="cls-2" cx="39.21" cy="39.47" rx="15.01" ry="15.96"/>
+      </g>
+      <ellipse class="cls-1" cx="58.94" cy="22.21" rx=".27" ry=".59"/>
+    </g>
+  </g>
+</svg>

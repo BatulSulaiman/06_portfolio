@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+main {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
 img {
   width: 100%;
   height: auto;
@@ -275,6 +278,7 @@ nav {
   padding-right: 1rem;
   align-self: start;
 }
+
 .circle-1,
 .circle-2 {
   position: absolute;
@@ -285,7 +289,7 @@ nav {
 .circle-1 {
   top: 0;
   left: -50px;
-  width: 450px;
+  width: 420px;
 }
 
 .circle-2 {
@@ -369,3 +373,117 @@ nav {
 }
 
 /*************/
+.cirkel-sektion {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.cirkel-baggrund {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  max-width: 80%;
+}
+
+.cirkel-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.cirkel-billede {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 580px) {
+  .cirkel-sektion {
+    padding: 1rem;
+  }
+
+  .cirkel-baggrund {
+    width: 220px;
+    right: -50px;
+    bottom: -50px;
+  }
+
+  .cirkel-wrapper {
+    margin-top: 2rem;
+  }
+
+  .cirkel-billede {
+    max-width: 180px;
+  }
+
+  .web-knap {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+.web-sektion {
+  background-color: rgba(241, 213, 220, 0.4); /* #F1D5DC med 40% */
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* to lige store kolonner */
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.web-sektion img {
+  width: 100%; /* Fyld kolonnen */
+  max-width: 300px; /* Begræns størrelsen */
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  justify-self: center; /* Midt i kolonnen */
+  aspect-ratio: 4 / 3;
+}
+
+.web-knap {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #3d2f2f;
+  border: 2.5px solid #3d2f2f;
+  background-color: #fbeff1;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.web-knap:hover {
+  background-color: #f2d3dc;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #3d2f2f;
+}
+
+/*********footer**********/
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  background-color: #ffffff;
+  padding: 40px;
+  padding-top: 20px;
+}
+footer img {
+  grid-column: 1;
+  max-width: 100px;
+}

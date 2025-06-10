@@ -133,28 +133,27 @@
     opacity: 0.4;
     z-index: -1;
   }
-
-  .portfolio-subtitle {
-    font-size: 18px;
-  }
-
+  /**************/
   .projects-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-    max-width: 1100px;
-    margin: 0 auto;
   }
 
   .project h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
-  .project-button img {
-    width: 280px;
-    bottom: 1000px;
+  .image-wrapper img {
+    max-width: 500px;
   }
 
-  .image-wrapper {
-    padding-bottom: 5rem;
+  .tema-knap {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.7rem;
+    border-width: 3px;
+  }
+
+  .portfolio-subtitle {
+    font-size: 18px;
   }
 }
