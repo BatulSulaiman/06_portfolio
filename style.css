@@ -34,13 +34,13 @@ h3 {
   line-height: 20px;
   color: #3d2f2f;
 }
-
 p {
   font-family: "Nunito", sans-serif;
   font-weight: 400; /* Regular */
   font-size: 14px;
   line-height: 1.6;
 }
+
 body {
   background-color: #fbf7fa;
 }
@@ -176,7 +176,11 @@ nav {
 .dropdown:hover .submenu {
   display: block;
 }
-
+.menu li a:hover,
+.submenu li a:hover {
+  color: #e4b37f;
+  transition: color 0.3s ease;
+}
 /********************************/
 /***********index***********/
 
@@ -240,14 +244,16 @@ nav {
   display: inline;
   grid-column: 2 / 3;
   grid-row: 3;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #a293b3;
+  color: #3d2f2f;
   font-size: 24px;
   margin-top: 20px;
 }
 .namelottie {
   display: none;
+  font-weight: 600;
+  color: #3d2f2f;
+  font-size: 24px;
 }
 
 .lottie {
@@ -378,7 +384,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* to lige store kolonner */
   gap: 2rem;
-  margin: 2rem auto;
+  border-radius: 16px;
+  margin: 6rem auto;
   max-width: 800px;
   justify-content: center;
 }
@@ -388,6 +395,7 @@ nav {
   max-width: 300px;
   height: auto;
   object-fit: cover;
+  border-radius: 12px;
   justify-self: center;
   aspect-ratio: 4 / 3;
 }
@@ -474,22 +482,30 @@ nav {
 .web-sektion2 {
   background-color: rgba(228, 179, 127, 0.4);
   padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* to lige store kolonner */
-  gap: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  justify-content: center;
+  margin: 6rem auto;
+  max-width: 900px;
+  border-radius: 16px;
 }
 
-.web-sektion2 img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  object-fit: cover;
-  justify-self: center;
-  aspect-ratio: 4 / 3;
+.scoll-bar {
+  display: flex;
+  gap: 1rem; /* afstand mellem billeder */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
 }
+
+.scoll-bar img {
+  flex: 0 0 auto;
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* valgfrit – for lidt dybde */
+}
+
 /****************/
 
 footer {
