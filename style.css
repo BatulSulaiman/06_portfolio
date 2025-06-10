@@ -473,17 +473,25 @@ nav {
 }
 
 /*********footer**********/
+footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
 
 .footer_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
-footer {
-  background-color: #ffffff;
-  padding: 40px;
-  padding-top: 20px;
+
+.footer_grid img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.2s ease;
 }
-footer img {
-  grid-column: 1;
-  max-width: 100px;
+
+.footer_grid img:hover {
+  transform: scale(1.1);
 }
